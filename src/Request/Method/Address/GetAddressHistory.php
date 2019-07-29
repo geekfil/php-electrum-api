@@ -57,6 +57,8 @@ class GetAddressHistory extends AbstractMethod implements MethodInterface
             'address' => $this->getAddress(),
         ]));
 
-        return $this->hydrate(new HistoryResponse(), $data);
+        return $data;
+        // not working
+        //return $this->hydrate(new HistoryResponse(), $data);
     }
 }
